@@ -50,26 +50,6 @@ year={2019}
 See test.json for reference
 * Put these file in the same folder and change data_dir['DATASETNAME'] in configs.py to the folder path  
 
-## Train
-Run
-```python ./train.py --dataset [DATASETNAME] --model [BACKBONENAME] --method [METHODNAME] [--OPTIONARG]```
-
-For example, run `python ./train.py --dataset miniImagenet --model Conv4 --method baseline --train_aug`  
-Commands below follow this example, and please refer to io_utils.py for additional options.
-
-## Save features
-Save the extracted feature before the classifaction layer to increase test speed. This is not applicable to MAML, but are required for other methods.
-Run
-```python ./save_features.py --dataset miniImagenet --model Conv4 --method baseline --train_aug```
-
-## Test
-Run
-```python ./test.py --dataset miniImagenet --model Conv4 --method baseline --train_aug```
-
-## Results
-* The test results will be recorded in `./record/results.txt`
-* For all the pre-computed results, please see `./record/few_shot_exp_figures.xlsx`. This will be helpful for including your own results for a fair comparison.
-
 ## References
 Our testbed builds upon several existing publicly available code. Specifically, we have modified and integrated the following code into this project:
 
