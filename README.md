@@ -1,3 +1,26 @@
+run: python train.py --dataset deecamp --model deecamp --method maml --train_aug 
+
+python test.py --dataset deecamp --model deecamp --method maml --train_aug
+
+##matchingnet save_feature.py test.py
+
+##io_utils.py: setting(CwayKshot) 
+
+##method:
+├── baselinefinetune.py
+├── baselinetrain.py
+├── __init__.py
+├── maml.py
+├── matchingnet.py
+├── meta_template.py
+├── protonet.py
+└── relationnet.py
+
+##backbone: conv,simpleblock,bottleblock
+
+##train.py optimizer lr size 
+
+
 # A Closer Look at Few-shot Classification
 
 This repo contains the reference source code for the paper [A Closer Look at Few-shot Classification](https://openreview.net/pdf?id=HkxLXnAcFQ) in International Conference on Learning Representations (ICLR 2019). In this project, we provide a integrated testbed for a detailed empirical study for few-shot classification.
